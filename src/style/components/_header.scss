@@ -1,0 +1,22 @@
+.header {
+    ul {
+        display: flex;
+        align-items: flex-start;
+        
+       
+        li {
+            padding: 0 20px;
+            transition: 0.3s ease;
+        }
+
+    }
+    .nav-active {
+        background: $black;
+    }
+    ul:hover li:not(:hover) {
+        background: none;
+    }
+    ul:hover li:hover {
+        background: $black;
+    }
+}
