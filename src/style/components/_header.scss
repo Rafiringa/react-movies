@@ -2,16 +2,22 @@
     ul {
         display: flex;
         align-items: flex-start;
+        max-width: 30%;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 1.8rem;
         
-       
         li {
             padding: 0 20px;
             transition: 0.3s ease;
+            border-radius: 10px;
         }
 
     }
     .nav-active {
-        background: $black;
+        background: $color5;
+        border-radius: 10px;
     }
     ul:hover li:not(:hover) {
         background: none;
@@ -19,4 +25,9 @@
     ul:hover li:hover {
         background: $black;
     }
+    .logo {
+        text-align: center;
+        text-shadow: 3px 3px $color5;
+        font-size: 2.5rem;
+    } 
 }

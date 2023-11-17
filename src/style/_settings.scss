@@ -12,8 +12,11 @@ $font-2: "font-2", serif;
 
 $white: rgb(218, 218, 218);
 $black: rgb(43, 43, 43);
-$color1: #2E6E5B;
-$color2: #C9DE6F;
+$color1: #151F30;
+$color2: #060d2c;
+$color3: #0593A2;
+$color4: #FF7A48;
+$color5: #E3371E;
 
 * {
     margin: 0;
@@ -23,19 +26,25 @@ $color2: #C9DE6F;
     outline: none;
     border:none;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 a,
-    a:visited {
-        color: $white;
-    }
+a:visited {
+    color: $white;
+}
+
+button {
+    cursor: pointer;
+}
 
 body {
-    background-color: $color1;
-    height: 100vh;
+    background: $color1;
     color: aliceblue;
     font-family: $font-1;
-    font-size: 2.5rem;
-
-    
 }
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
